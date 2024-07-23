@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팀 랜덤 구성 애플리케이션</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>팀 랜덤 구성 애플리케이션</h1>
+
+    <div>
+      <h2>데이터 관리</h2>
+      <button id="saveDataBtn">데이터 저장</button>
+      <input type="file" id="loadData" accept=".json">
+      <label for="loadData" class="file-label">데이터 불러오기</label>
+    </div>
+
+    <div>
+      <h2>팀원 관리</h2>
+      <input type="text" id="memberName" placeholder="이름">
+      <input type="file" id="profileImage" accept="image/*" class="file-input">
+      <label for="profileImage" class="file-label">프로필 이미지 선택</label>
+      <button id="addMemberBtn">팀원 추가</button>
+    </div>
+
+    <div id="memberList" class="member-list"></div>
+
+    <div>
+      <h2>팀 구성</h2>
+      <div class="team-size-selector">
+        <button id="decreaseTeamSizeBtn">-</button>
+        <span id="teamSizeDisplay" class="team-size-display">3</span>
+        <button id="increaseTeamSizeBtn">+</button>
+      </div>
+      <button id="createTeamsBtn">팀 구성하기</button>
+    </div>
+
+    <div id="teams"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
