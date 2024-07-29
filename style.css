@@ -40,7 +40,7 @@ button {
 }
 
 button:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: #222;
 }
 
 input[type="text"],
@@ -90,6 +90,7 @@ input[type="file"] {
   background-color: var(--background-color);
   border-radius: 4px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
 }
 
 .member-card img {
@@ -103,4 +104,9 @@ input[type="file"] {
 #loadData,
 #profileImage {
   display: none
+}
+
+#saveDataBtn {
+  display: block;
+  padding: 20px 40px;
 }
