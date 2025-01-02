@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팀 랜덤 구성 애플리케이션</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title-wrap">
+      <h1>팀 랜덤 구성 애플리케이션</h1>
+
+      <div class="load-data">
+        <input type="file" id="loadData" accept=".json">
+        <label for="loadData" class="btn btn-load-data">데이터 불러오기</label>
+      </div>
+    </div>
+
+
+    <section>
+      <h2>팀원 관리</h2>
+      <div class="add-member">
+        <input type="text" id="memberName" placeholder="이름">
+        <input type="file" id="profileImage" accept="image/*" class="file-input">
+        <label for="profileImage" class="add-profile-img">프로필 이미지 선택</label>
+        <button id="addMemberBtn" class="btn">팀원 추가</button>
+      </div>
+      <button id="saveDataBtn" class="btn btn-strong">데이터 저장</button>
+    </section>
+
+    <div id="memberList" class="member-list"></div>
+
+    <section class="make-team">
+      <h2>팀 구성</h2>
+      <div class="team-size-selector">
+        <button id="decreaseTeamSizeBtn" class="btn">-</button>
+        <span id="teamSizeDisplay" class="team-size-display">3</span>
+        <button id="increaseTeamSizeBtn" class="btn">+</button>
+      </div>
+      <button id="createTeamsBtn" class="btn btn-strong">팀 구성하기</button>
+    </section>
+
+    <div id="teams"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
